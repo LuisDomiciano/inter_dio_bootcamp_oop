@@ -2,38 +2,18 @@ package io.dio.domain;
 
 import java.time.LocalDate;
 
-public class Mentory {
+public class Mentory extends Content {
 
-	private String title;
-	private String description;
 	LocalDate date;
 	
 	public Mentory() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
-	public Mentory(String title, String description, LocalDate date) {
-		super();
-		this.title = title;
-		this.description = description;
-		this.date = date;
-	}
-
-	public String getTitle() {
-		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
+	
+	@Override
+	public double experience_calculate() {
+		return EXPERIENCE_DEFAULT + 20;
 	}
 
 	public LocalDate getDate() {
@@ -46,7 +26,7 @@ public class Mentory {
 
 	@Override
 	public String toString() {
-		return "Mentory [title=" + title + ", description=" + description + ", date=" + date + "]";
+		return "Mentory [title=" + getTitle() + ", description=" + getDescription() + ", date=" + date + "]";
 	}
 	
 }
