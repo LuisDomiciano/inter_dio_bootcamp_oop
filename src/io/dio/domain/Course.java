@@ -40,4 +40,9 @@ public class Course {
 		this.workload = workload;
 	}
 
+	@Override
+	public String toString() {
+		return "Course [title=" + title + ", description=" + description + ", workload=" + workload + "]";
+	}
+	
 }

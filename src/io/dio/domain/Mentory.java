@@ -43,5 +43,10 @@ public class Mentory {
 	public void setDate(LocalDate date) {
 		this.date = date;
 	}
+
+	@Override
+	public String toString() {
+		return "Mentory [title=" + title + ", description=" + description + ", date=" + date + "]";
+	}
 	
 }
