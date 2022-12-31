@@ -5,12 +5,12 @@ import java.time.LocalDate;
 public class Mentory extends Content {
 
 	LocalDate date;
-	
+
 	public Mentory() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	@Override
 	public double experience_calculate() {
 		return EXPERIENCE_DEFAULT + 20;
@@ -28,5 +28,5 @@ public class Mentory extends Content {
 	public String toString() {
 		return "Mentory [title=" + getTitle() + ", description=" + getDescription() + ", date=" + date + "]";
 	}
-	
+
 }

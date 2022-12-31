@@ -1,6 +1,6 @@
 package io.dio.domain;
 
-public class Course extends Content{
+public class Course extends Content {
 
 	private int workload;
 
@@ -13,7 +13,7 @@ public class Course extends Content{
 		// TODO Auto-generated method stub
 		return EXPERIENCE_DEFAULT * workload;
 	}
-	
+
 	public int getWorkload() {
 		return workload;
 	}
@@ -27,6 +27,4 @@ public class Course extends Content{
 		return "Course [title=" + getTitle() + ", description=" + getDescription() + ", workload=" + workload + "]";
 	}
 
-	
-	
 }

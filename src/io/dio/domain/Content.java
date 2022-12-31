@@ -3,10 +3,10 @@ package io.dio.domain;
 public abstract class Content {
 
 	protected static final double EXPERIENCE_DEFAULT = 10d;
-	
+
 	private String title;
 	private String description;
-	
+
 	public abstract double experience_calculate();
 
 	public String getTitle() {
@@ -24,6 +24,5 @@ public abstract class Content {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
-	
+
 }
