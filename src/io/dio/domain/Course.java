@@ -9,7 +9,7 @@ public class Course extends Content {
 	}
 
 	@Override
-	public double experience_calculate() {
+	public double experienceCalculate() {
 		// TODO Auto-generated method stub
 		return EXPERIENCE_DEFAULT * workload;
 	}

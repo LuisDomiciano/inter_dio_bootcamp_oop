@@ -12,7 +12,7 @@ public class Mentory extends Content {
 	}
 
 	@Override
-	public double experience_calculate() {
+	public double experienceCalculate() {
 		return EXPERIENCE_DEFAULT + 20;
 	}
 
