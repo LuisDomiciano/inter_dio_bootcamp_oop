@@ -2,24 +2,29 @@ package io.dio.domain;
 
 import java.util.LinkedHashSet;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.Set;
 
 public class Developer {
-	
+
 	private String name;
 	private Set<Content> contentSubscribed = new LinkedHashSet<>();
 	private Set<Content> completedContents = new LinkedHashSet<>();
-	
+
 	public void bootcampSubscribe(Bootcamp bootcamp) {
-		
+		this.contentSubscribed.addAll(bootcamp.getContents());
 	}
-	
+
 	public void progress() {
-		
+		Optional<Content> content = this.contentSubscribed.stream().findFirst();
+		if (content.isPresent()) {
+			this.completedContents.add(content.get());
+			this.contentSubscribed.remove(content.get());
+		}
 	}
-	
+
 	public void totalExperienceCalculate() {
-		
+
 	}
 
 	public String getName() {
@@ -63,7 +68,4 @@ public class Developer {
 		return Objects.equals(completedContents, other.completedContents)
 				&& Objects.equals(contentSubscribed, other.contentSubscribed) && Objects.equals(name, other.name);
 	}
-
-	
-	
 }
