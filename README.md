@@ -18,5 +18,5 @@
 Follow me:
 
 - Website - [Luís Domiciano](https://linktr.ee/luisdomiciano)
-- Linkedin - [LuisDomiciano](https://linkedin.com/luisdomiciano)
+- Linkedin - [LuisDomiciano](https://linkedin.com/in/luisdomiciano)
 - Twitter - [@__LuisD](https://twitter.com/__LuisD)
